@@ -1,0 +1,50 @@
+dsadd ou ou=Staff,dc=cyber,dc=local
+dsadd ou ou=Sales,dc=cyber,dc=local
+dsadd ou ou=Logistics,dc=cyber,dc=local
+dsadd ou ou=Resources,dc=cyber,dc=local
+dsadd ou ou=PlanningCS,dc=cyber,dc=local
+dsadd ou ou=Transport,dc=cyber,dc=local
+dsadd ou ou=QualityControl,ou=staff,dc=cyber,dc=local
+dsadd ou ou=HRM-Secretariaat,ou=staff,dc=cyber,dc=local
+dsadd ou ou=Finance,ou=staff,dc=cyber,dc=local
+dsadd ou ou=Printers,ou=Resources,dc=cyber,dc=local
+dsadd ou ou=Databases,ou=Resources,dc=cyber,dc=local
+
+dsadd user "cn=R.Hermsen,ou=Staff,dc=cyber,dc=local" -samid rherm -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=F.Armstrong,ou=Staff,dc=cyber,dc=local" -samid farms -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=H.Philipsen,ou=QualityControl,ou=staff,dc=cyber,dc=local" -samid hphil -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=D.Potter,ou=HRM-Secretariaat,ou=Staff,dc=cyber,dc=local" -samid dpott -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=S.Mooi,ou=Finance,ou=Staff,dc=cyber,dc=local" -samid smooi -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=M.Grotski,ou=Sales,dc=cyber,dc=local" -samid mgroo -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=E.Kelly,ou=Finance,ou=Staff,dc=cyber,dc=local" -samid ekelly -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=R.Terpen,ou=Logistics,dc=cyber,dc=local" -samid rterpen -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=P.Terpen,ou=Logistics,dc=cyber,dc=local" -samid pterpen -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=J.Lange,ou=PlanningCS,dc=cyber,dc=local" -samid jlang -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=P.Hoogen,ou=PlanningCS,dc=cyber,dc=local" -samid phoog -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=E.Swiniaski,ou=PlanningCS,dc=cyber,dc=local" -samid eswin -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=L.von Pfirt,ou=PlanningCS,dc=cyber,dc=local" -samid lwpfir -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=M.Cheimuo,ou=PlanningCS,dc=cyber,dc=local" -samid mchei -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=S.Raayland,ou=PlanningCS,dc=cyber,dc=local" -samid sraay -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=M.Joosten,ou=PlanningCS,dc=cyber,dc=local" -samid mjoos -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=H.Huppelschoten,ou=PlanningCS,dc=cyber,dc=local" -samid hhupp -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=A.van der Cruysen,ou=Transport,dc=cyber,dc=local" -samid acruy -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=G. Chebdi,ou=Transport,dc=cyber,dc=local" -samid gcheb -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+dsadd user "cn=C.Berewiz,ou=Transport,dc=cyber,dc=local" -samid cbere -pwd P@ssw0rd -pwdneverexpires yes -canchpwd no
+
+dsadd group cn=StaffGG,ou=Staff,dc=cyber,dc=local -scope g -secgrp yes
+dsadd group cn=QualityGG,ou=QualityControl,ou=Staff,dc=cyber,dc=local -scope g -secgrp yes
+dsadd group cn=HrmGG,ou=HRM-Secretariaat,ou=Staff,dc=cyber,dc=local -scope g -secgrp yes
+dsadd group cn=FinanceGG,ou=Finance,ou=Staff,dc=cyber,dc=local -scope g -secgrp yes
+dsadd group cn=SalesGG,ou=Sales,dc=cyber,dc=local -scope g -secgrp yes
+dsadd group cn=LogisticsGG,ou=Logistics,dc=cyber,dc=local -scope g -secgrp yes
+dsadd group cn=PlanningCSGG,ou=PlanningCS,dc=cyber,dc=local -scope g -secgrp yes
+dsadd group cn=TransportGG,ou=Transport,dc=cyber,dc=local -scope g -secgrp yes
+
+dsadd group cn=PrinterDL,ou=Printers,ou=Resources,dc=cyber,dc=local -scope l -secgrp yes
+dsadd group cn=SalesPrinterDL,ou=Printers,ou=Resources,dc=cyber,dc=local -scope l -secgrp yes
+dsadd group cn=PlanningPrinterDL,ou=Printers,ou=Resources,dc=cyber,dc=local -scope l -secgrp yes
+dsadd group cn=MapPointDL,ou=databases,ou=Resources,dc=cyber,dc=local -scope l -secgrp yes
+
+
+
+
